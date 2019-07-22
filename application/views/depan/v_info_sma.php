@@ -72,9 +72,9 @@
 							<div class="header-column">
 								<div class="header-row">
 								<div class="header-logo">
-								<br><br>
+								
 									<a href="<?php echo base_url()?>">
-										<img alt="Porto" width="290px" height="50px" src="<?php echo base_url()?>template/logo.png">
+										<img alt="Porto" width="100px" height="100px" src="<?php echo base_url()?>template/logo_alazhar.png">
 									</a>
 								</div>
 								</div>

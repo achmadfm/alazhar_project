@@ -18,16 +18,14 @@
         <li><a  href="<?php echo base_url('fasilitas')?>">Fasilitas</a></li>
       </ul>
     </li>
-    <li class="dropdown <?php echo activate_menu('Sbbi');?>">
+    <li class="dropdown <?php echo activate_menu('Cilegon');?>">
       <a class="dropdown-toggle" href="#">
         Program
       </a>
       <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="<?php echo base_url('Sbbi/info_sma')?>">Sekolah Menengah Atas</a></li>
-          <li><a class="dropdown-item" href="<?php echo base_url('Sbbi/info_smp')?>">Sekolah Menengah Pertama</a></li>
-          <li><a class="dropdown-item" href="<?php echo base_url('Sbbi/info_sd')?>">Sekolah Dasar</a></li>
-          <li><a class="dropdown-item" href="<?php echo base_url('Sbbi/info_tk')?>">Taman Kanak-Kanak</a></li>
-          <li><a class="dropdown-item" href="<?php echo base_url('Sbbi/info_pg')?>">Play Group</a></li>
+          <li><a class="dropdown-item" href="<?php echo base_url('Cilegon/info_sma')?>">Sekolah Menengah Atas</a></li>
+          <li><a class="dropdown-item" href="<?php echo base_url('Cilegon/info_smp')?>">Sekolah Menengah Pertama</a></li>
+          <li><a class="dropdown-item" href="<?php echo base_url('Cilegon/info_sd')?>">Sekolah Dasar</a></li>
       </ul>
     </li>
     <li class="dropdown <?php echo activate_menu('berita'); echo activate_menu('berita_boarding'); echo activate_menu('pengumuman'); echo activate_menu('insight_reading');?>">
