@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'host' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'binainsani_new',
+	'host' => 'https://cilegon.bosowaschool.sch.id',
+	'username' => 'bosowasc_alazharcilegon',
+	'password' => 'cilegon13',
+	'database' => 'bosowasc_cilegon',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
