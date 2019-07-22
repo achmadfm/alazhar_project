@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="footer-ribbon">
-				<span style="font-family:Tahoma;">Bosowa Bina Insani Bogor</span>
+				<span style="font-family:Tahoma;">Bosowa Al-Azhar Cilegon</span>
 			</div>
 			<div class="col-lg-3">
 				<div class="contact-details">

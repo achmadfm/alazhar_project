@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Sambutan Kepala Sekolah | Bosowa Bina Insani Bogor</title>
+		<title>Sambutan Kepala Sekolah | Bosowa Al-Azhar Cilegon</title>
 
 		<meta name="keywords" content="Menyajikan Informasi Seputar Sekolah, Asrama dan Pendaftaran Siswa Baru" />
-		<meta name="description" content="Selamat Datang di Website Bosowa Bina Insani Bogor, adalah Website Profil yang memberikan layanan informasi seputar kegiatan Sekolah, Asrama dan Pendaftaran Siswa Baru" />
+		<meta name="description" content="Selamat Datang di Website Bosowa Al-Azhar Cilegon, adalah Website Profil yang memberikan layanan informasi seputar kegiatan Sekolah, Asrama dan Pendaftaran Siswa Baru" />
 		<meta name="author" content="One Bosowa School">
 		<meta http-equiv="Content-Language" content="id-ID">
     	<meta NAME="Distribution" CONTENT="Global">
@@ -116,7 +116,7 @@
 					<div class="container">
 						<div class="col-md-12">
 							<?php $s = $speech->row_array();?>
-							<h2>Sambutan Kepala Sekolah Bosowa Bina Insani Bogor</h2>
+							<h2>Sambutan Kepala Sekolah Bosowa Al-Azhar Cilegon</h2>
 							<div class="sticky-container">
 								<div class="row">
 									<div class="col-md-8">

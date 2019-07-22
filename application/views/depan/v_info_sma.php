@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Informasi SMA | Bosowa Bina Insani Bogor</title>
+		<title>Informasi SMA | Bosowa Al-Azhar Cilegon</title>
 
 		<meta name="keywords" content="Menyajikan Informasi Seputar Sekolah, Asrama dan Pendaftaran Siswa Baru" />
-		<meta name="description" content="Selamat Datang di Website Bosowa Bina Insani Bogor, adalah Website Profil yang memberikan layanan informasi seputar kegiatan Sekolah, Asrama dan Pendaftaran Siswa Baru" />
+		<meta name="description" content="Selamat Datang di Website Bosowa Al-Azhar Cilegon, adalah Website Profil yang memberikan layanan informasi seputar kegiatan Sekolah, Asrama dan Pendaftaran Siswa Baru" />
 		<meta name="author" content="One Bosowa School">
 		<meta http-equiv="Content-Language" content="id-ID">
     	<meta NAME="Distribution" CONTENT="Global">
@@ -117,7 +117,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<h1>SMA Bosowa Bina Insani Bogor</h1>
+								<h1>SMA Bosowa Al-Azhar Cilegon</h1>
 							</div>
 						</div>
 					</div>

@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Insight Reading | Bosowa Bina Insani Bogor</title>
+		<title>Insight Reading | Bosowa Al-Azhar Cilegon</title>
 
-        <meta name="keywords" content="Bosowa Bina Insani Bogor" />
-		<meta name="description" content="Bosowa Bina Insani Bogor Web Profile">
+        <meta name="keywords" content="Bosowa Al-Azhar Cilegon" />
+		<meta name="description" content="Bosowa Al-Azhar Cilegon Web Profile">
 		<meta name="author" content="#">
 
 		<!-- Favicon -->

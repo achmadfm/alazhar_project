@@ -20,10 +20,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Visi dan Misi | Bosowa Bina Insani Bogor</title>
+		<title>Visi dan Misi | Bosowa Al-Azhar Cilegon</title>
 
 		<meta name="keywords" content="Menyajikan Informasi Seputar Sekolah, Asrama dan Pendaftaran Siswa Baru" />
-		<meta name="description" content="Selamat Datang di Website Bosowa Bina Insani Bogor, adalah Website Profil yang memberikan layanan informasi seputar kegiatan Sekolah, Asrama dan Pendaftaran Siswa Baru" />
+		<meta name="description" content="Selamat Datang di Website Bosowa Al-Azhar Cilegon, adalah Website Profil yang memberikan layanan informasi seputar kegiatan Sekolah, Asrama dan Pendaftaran Siswa Baru" />
 		<meta name="author" content="One Bosowa School">
 		<meta http-equiv="Content-Language" content="id-ID">
     	<meta NAME="Distribution" CONTENT="Global">
@@ -146,7 +146,7 @@
 									<div class="container">
 									    <div class="row-center">
 									        <p align="center">
-									            <img src="<?php echo base_url()?>template/logo_b.png" width="180px" height="180px">
+									            <img src="<?php echo base_url()?>template/logo_alazhar.png" width="180px" height="180px">
 									        </p>
 									        
 									    </div>
