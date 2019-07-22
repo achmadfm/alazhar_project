@@ -1,5 +1,5 @@
 <?php
-  class Cilgeon extends CI_Controller{
+  class Cilegon extends CI_Controller{
 
     function __construct(){
       parent::__construct();
