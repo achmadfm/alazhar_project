@@ -29,7 +29,7 @@
 	    } ?>
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="<?php echo base_url()?>template/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="<?php echo base_url()?>template/favicon.png" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="<?php echo base_url()?>img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->

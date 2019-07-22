@@ -14,7 +14,7 @@
     	<meta NAME="Rating" CONTENT="General">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="<?php echo base_url()?>template/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="<?php echo base_url()?>template/favicon.png" type="image/x-icon" />
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
