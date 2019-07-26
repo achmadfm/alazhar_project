@@ -161,10 +161,10 @@
 						<div class="col-md-6">
 
 							<h4 class="heading-primary"><strong>Kantor</strong></h4>
-								<a class="mt-1 mb-1 popup-gmaps btn btn-primary" href="https://www.google.com/maps/place/Bosowa+School+Makassar/@-5.1515996,119.4185027,17z/data=!3m1!4b1!4m5!3m4!1s0x2dbee2a7d50fd595:0xcfd7bad563becf25!8m2!3d-5.1515996!4d119.4206914" target="_blank">Open Google Map</a>
+								<a class="mt-1 mb-1 popup-gmaps btn btn-primary" href="https://www.google.com/maps?safe=strict&q=bosowa+al+azhar+cilegon&biw=1366&bih=615&dpr=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjWtsrDytLjAhUXfysKHc3TDXEQ_AUIEigC" target="_blank">Open Google Map</a>
 							<ul class="list list-icons list-icons-style-3 mt-xlg">
-								<li><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jl. Lanto Dg. Pasewang No.39-41, Makassar, Sulawesi Selatan</li>
-								<li><i class="fa fa-phone"></i> <strong>Telepon:</strong> (0411) 855-123</li>
+								<li><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jalan Boulevard Blok B No.5, Sukmajaya, Kecamatan Jombang, Kedaleman, Kec. Cibeber, Kota Cilegon, Banten 42422</li>
+								<li><i class="fa fa-phone"></i> <strong>Telepon:</strong> (0254) 378474</li>
 								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="#">info.bosowaschoolmakassar@gmail.com</a></li>
 							</ul>
 
