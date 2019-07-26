@@ -27,7 +27,7 @@
 				<h4>Follow Us</h4>
 				<ul class="social-icons">
 					<li class="social-icons-facebook"><a href="https://www.facebook.com/sekolah.bosowa.alazhar.cilegon/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-					<li class="social-icons-instagram"><a href="https://www.instagram.com/bosowaschoolmks/?hl=en" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+					<li class="social-icons-instagram"><a href="https://instagram.com/bosowa.alazhar?igshid=hbho3n4s34ns" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
 					<li class="social-icons-youtube"><a href="https://www.youtube.com/channel/UCXhjhvwRJg2MhbMjt8o7wzQ" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a></li>
 				</ul>
 			</div>
