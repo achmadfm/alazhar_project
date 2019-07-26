@@ -16,7 +16,7 @@
 				<a class="nav-link" href="https://bosowafoundation.org/" target="_blank"><i class="fa fa-globe"></i> Bosowa Foundation</a>
 			</li>
 			<li class="nav-item d-none d-sm-block">
-				<a class="nav-link" href="https://bogor.bosowaschool.ac.id/" target="_blank"><i class="fa fa-globe"></i> Bosowa Bina Insani Bogor</a>
+				<a class="nav-link" href="https://bogor.bosowaschool.sch.id/" target="_blank"><i class="fa fa-globe"></i> Bosowa Bina Insani Bogor</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="https://makassar.bosowaschool.sch.id" target="_blank"><i class="fa fa-globe"></i> Bosowa School Makassar</a>
