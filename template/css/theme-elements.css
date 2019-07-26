@@ -663,21 +663,21 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .btn-info {
-	border-color: #211D70;
-	background-color: #211D70;
-	border-color: #211D70 #211D70 #746cfd;
+	border-color: #0088cc;
+	background-color: #0088cc;
+	border-color: #0088cc #0088cc #00a2f3;
 	color: #FFF;
 }
 
 .btn-info:hover {
-	border-color: #7169ff #7169ff #554edf;
-	background-color: #7169ff;
+	border-color: #0098e4 #0098e4 #12a3ec;
+	background-color: #0098e4;
 	color: #FFF;
 }
 
 .btn-info:active, .btn-info:focus {
-	border-color: #554edf;
-	background-color: #554edf;
+	border-color: #12a3ec;
+	background-color: #12a3ec;
 	color: #FFF;
 }
 
@@ -779,14 +779,14 @@ html.boxed .nav-secondary.sticky-active {
 
 .btn-borders.btn-info {
 	background: transparent;
-	border-color: #211D70;
-	color: #211D70;
+	border-color: #0088cc;
+	color: #0088cc;
 	text-shadow: none;
 }
 
 .btn-borders.btn-info:hover, .btn-borders.btn-info:focus {
 	background-color: #70c8e2;
-	border-color: #211D70 !important;
+	border-color: #0088cc !important;
 	color: #FFF;
 }
 
@@ -878,7 +878,7 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .label-info {
-	background-color: #211D70;
+	background-color: #0088cc;
 	color: #FFF;
 }
 
@@ -1076,7 +1076,7 @@ label.error#captcha-error {
 .table > thead > tr.info > th,
 .table > tbody > tr.info > th,
 .table > tfoot > tr.info > th {
-	background-color: #211D70;
+	background-color: #0088cc;
 	color: #FFF;
 }
 
@@ -6681,7 +6681,7 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .progress-bar-info {
-	background-color: #211D70;
+	background-color: #0088cc;
 	color: #FFF;
 }
 
