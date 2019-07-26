@@ -160,9 +160,9 @@
                             </div>
                         </div>
 							<a class="btn btn-primary btn-lg round" href="<?php echo base_url('Sbbi/info_sma')?>">Sekolah Menengah Atas</a>
-							<a class="btn btn-danger btn-lg round" href="<?php echo base_url('Sbbi/info_smp')?>">Sekolah Menengah Pertama</a>
+							<a class="btn btn-info btn-lg round" href="<?php echo base_url('Sbbi/info_smp')?>">Sekolah Menengah Pertama</a>
 							<a class="btn btn-primary btn-lg round" href="<?php echo base_url('Sbbi/info_sd')?>">Sekolah Dasar</a>
-							<a class="btn btn-danger btn-lg round" href="<?php echo base_url('Sbbi/info_tk')?>">Taman Kanak-kanak</a>
+							<a class="btn btn-info btn-lg round" href="<?php echo base_url('Sbbi/info_tk')?>">Taman Kanak-kanak</a>
 						    <a class="btn btn-primary btn-lg round" href="<?php echo base_url('Sbbi/info_pg')?>">Play Group</a>
 					</center>	
 				</div>
@@ -183,7 +183,7 @@
 										   II : Februari 2019 - April 2019<br>
 										  III : Mei 2019 - Juni 2019
 										</p>
-										 <a href="http://bit.ly/Register_BSM" target="_blank" class="btn btn-md btn-warning">Daftar? Klik disini!</a>
+										 <a href="http://bit.ly/Register_BSM" target="_blank" class="btn btn-md btn-info">Daftar? Klik disini!</a>
 									</div>
 								</div>
 							</div>
