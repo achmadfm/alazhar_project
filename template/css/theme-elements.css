@@ -663,21 +663,21 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .btn-info {
-	border-color: #5bc0de;
-	background-color: #5bc0de;
-	border-color: #5bc0de #5bc0de #31b0d5;
+	border-color: #211D70;
+	background-color: #211D70;
+	border-color: #211D70 #211D70 #746cfd;
 	color: #FFF;
 }
 
 .btn-info:hover {
-	border-color: #70c8e2 #70c8e2 #46b8da;
-	background-color: #70c8e2;
+	border-color: #7169ff #7169ff #554edf;
+	background-color: #7169ff;
 	color: #FFF;
 }
 
 .btn-info:active, .btn-info:focus {
-	border-color: #46b8da;
-	background-color: #46b8da;
+	border-color: #554edf;
+	background-color: #554edf;
 	color: #FFF;
 }
 
@@ -779,14 +779,14 @@ html.boxed .nav-secondary.sticky-active {
 
 .btn-borders.btn-info {
 	background: transparent;
-	border-color: #5bc0de;
-	color: #5bc0de;
+	border-color: #211D70;
+	color: #211D70;
 	text-shadow: none;
 }
 
 .btn-borders.btn-info:hover, .btn-borders.btn-info:focus {
 	background-color: #70c8e2;
-	border-color: #5bc0de !important;
+	border-color: #211D70 !important;
 	color: #FFF;
 }
 
@@ -878,7 +878,7 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .label-info {
-	background-color: #5bc0de;
+	background-color: #211D70;
 	color: #FFF;
 }
 
@@ -1076,7 +1076,7 @@ label.error#captcha-error {
 .table > thead > tr.info > th,
 .table > tbody > tr.info > th,
 .table > tfoot > tr.info > th {
-	background-color: #5bc0de;
+	background-color: #211D70;
 	color: #FFF;
 }
 
@@ -6681,7 +6681,7 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .progress-bar-info {
-	background-color: #5bc0de;
+	background-color: #211D70;
 	color: #FFF;
 }
 
