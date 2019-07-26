@@ -27,7 +27,7 @@ body{
 	bottom: -40px;
 	width: auto;
 	height: auto;
-	background-image: url("template/background.jpg");
+	background-image: url("template/alazhar.jpg");
 	background-size: cover;
 	-webkit-filter: blur(5px);
 	z-index: 0;
@@ -157,7 +157,7 @@ body{
 		<div class="grad"></div>
 		<div class="header">
 			<div>
-					<img src="<?php echo base_url('template/logo.png')?>" width="210px"></div>
+					<img src="<?php echo base_url('template/logo_alazhar.png')?>" width="210px"></div>
 		</div>
 		<br>
 		<div class="login">
