@@ -157,7 +157,7 @@ body{
 		<div class="grad"></div>
 		<div class="header">
 			<div>
-					<img src="<?php echo base_url('template/logo_alazhar.png')?>" width="210px"></div>
+					<img src="<?php echo base_url('template/logo.png')?>" width="210px"></div>
 		</div>
 		<br>
 		<div class="login">
