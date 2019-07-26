@@ -271,7 +271,7 @@
 					</div>
 				</section>
 
-				<section class="parallax section section-text-light section-parallax" data-plugin-parallax data-plugin-options="{'speed': 1}" data-image-src="<?php echo base_url()?>template/pendidikan/smpbaru.png">
+				<section class="parallax section section-text-light section-parallax" data-plugin-parallax data-plugin-options="{'speed': 1}" data-image-src="<?php echo base_url()?>template/daftar_alazhar.jpg">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">

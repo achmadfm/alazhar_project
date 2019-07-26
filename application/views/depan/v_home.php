@@ -169,7 +169,7 @@
 
                 <hr class="tall">
                 
-				<section class="parallax section section-text-light section-parallax" data-plugin-parallax data-plugin-options="{'speed': 1}" data-image-src="<?php echo base_url()?>template/daftar.jpg">
+				<section class="parallax section section-text-light section-parallax" data-plugin-parallax data-plugin-options="{'speed': 1}" data-image-src="<?php echo base_url()?>template/daftar_alazhar.jpg">
 					<section class="call-to-action">
 						<div class="container">
 							<div class="row">
