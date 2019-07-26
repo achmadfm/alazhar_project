@@ -30,8 +30,7 @@
     	<meta NAME="Rating" CONTENT="General">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="<?php echo base_url()?>template/favicon.png" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="<?php echo base_url()?>template/img/apple-touch-icon.png">
+		<?php $this->load->view('depan/favicon')?>
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">

@@ -11,8 +11,7 @@
 		<meta name="author" content="#">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="<?php echo base_url()?>template/favicon.png" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="<?php echo base_url()?>template/img/apple-touch-icon.png">
+		<?php $this->load->view('depan/favicon')?>
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
