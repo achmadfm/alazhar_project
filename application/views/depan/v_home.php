@@ -324,29 +324,29 @@
 						<div class="row counters">
 								<div class="col-sm-6 col-lg-3">
 									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="300">
-										<i style="color:#211D70;" class="fa fa-user-o"></i>
-										<strong style="color:#211D70;" data-to="<?php echo $visitoronline;?>">0</strong>
+										<i style="color:#0088cc;" class="fa fa-user-o"></i>
+										<strong style="color:#0088cc;" data-to="<?php echo $visitoronline;?>">0</strong>
 										<label>Pengunjung Online Saat ini</label>
 									</div>
 								</div>
 								<div class="col-sm-6 col-lg-3">
 									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="600">
-										<i style="color:#211D70;" class="fa fa-users"></i>
-										<strong style="color:#211D70;" data-to="<?php echo $pengunjung?>">0</strong>
+										<i style="color:#0088cc;" class="fa fa-users"></i>
+										<strong style="color:#0088cc;" data-to="<?php echo $pengunjung?>">0</strong>
 										<label>Pengunjung Hari ini</label>
 									</div>
 								</div>
 								<div class="col-sm-6 col-lg-3">
 									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="900">
-										<i style="color:#211D70;" class="fa fa-exchange"></i>
-										<strong style="color:#211D70;" data-to="<?php echo $hits['total'];?>">0</strong>
+										<i style="color:#0088cc;" class="fa fa-exchange"></i>
+										<strong style="color:#0088cc;" data-to="<?php echo $hits['total'];?>">0</strong>
 										<label>Hits hari ini</label>
 								</div>
 							</div>
 								<div class="col-sm-6 col-lg-3">
 									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="1200">
-										<i style="color:#211D70;" class="fa fa-line-chart"></i>
-										<strong style="color:#211D70;" data-to="<?php echo $lastyear['visitor_last_year'];?>">0</strong>
+										<i style="color:#0088cc;" class="fa fa-line-chart"></i>
+										<strong style="color:#0088cc;" data-to="<?php echo $lastyear['visitor_last_year'];?>">0</strong>
 										<label>Pengunjung Tahun Terakhir</label>
 								</div>
 							</div>
