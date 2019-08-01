@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>template/favicon.ico">
-    <title>Slider Unit Pendidikan - Admin Bosowa Bina Insani Bogor</title>
+    <title>Slider Unit Pendidikan - Admin Bosowa Al-Azhar Cilegon</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url()?>materialize/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- animation CSS -->

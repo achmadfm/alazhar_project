@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Bosowa Bina Insani Bogor | Administrator Login</title>
+  <title>Bosowa Al-Azhar Cilegon | Administrator Login</title>
   <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'template/favicon.ico'?>">
       <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */

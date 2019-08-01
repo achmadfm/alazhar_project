@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>template/favicon.ico">
-    <title>Agenda - Admin Bosowa Bina Insani Bogor</title>
+    <title>Agenda - Admin Bosowa Al-Azhar Cilegon</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url()?>materialize/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url()?>plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />

@@ -14,12 +14,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>template/favicon.ico">
-    <title>Files - Admin Bosowa Al-Azhar Cilegon</title>
+    <title>Articles (Insight Reading) - Admin Bosowa Al-Azhar Cilegon</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url()?>materialize/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url()?>plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url()?>plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
     <!-- Menu CSS -->
     <link href="<?php echo base_url()?>plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     <!-- animation CSS -->
@@ -28,6 +27,7 @@
     <link href="<?php echo base_url()?>materialize/css/style.css" rel="stylesheet">
     <!-- color CSS -->
     <link href="<?php echo base_url()?>materialize/css/colors/megna-dark.css" id="theme" rel="stylesheet">
+    <link href="<?php echo base_url()?>plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -66,7 +66,7 @@
                   <li> <a href="<?php echo base_url('admin/users')?>" class="waves-effect "><i class="mdi mdi-account fa-fw"></i> <span class="hide-menu">Users</span></a></li>
                   <li class="mega-nav"> <a href="<?php echo base_url('admin/agenda')?>" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Agenda</span></a></li>
                   <li> <a href="<?php echo base_url('admin/pengumuman')?>" class="waves-effect"><i class="mdi mdi-volume-high fa-fw"></i> <span class="hide-menu">Pengumuman</span></a></li>
-                  <li> <a href="<?php echo base_url('admin/files')?>" class="waves-effect active"><i class="mdi mdi-cloud-download fa-fw"></i> <span class="hide-menu">Download</span></a></li>
+                  <li> <a href="<?php echo base_url('admin/files')?>" class="waves-effect"><i class="mdi mdi-cloud-download fa-fw"></i> <span class="hide-menu">Download</span></a></li>
                   <li class="last-nav"><a href="#" class="waves-effect"><i class="mdi mdi-google-photos fa-fw"></i> <span class="hide-menu">Galeri<span class="fa arrow"></span></span></a>
                       <ul class="nav nav-second-level">
                           <li><a href="<?php echo base_url('admin/album')?>"><i class="mdi mdi-image-album fa-fw"></i><span class="hide-menu">Album</span></a></li>
@@ -109,51 +109,47 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Download</h4> </div>
+                        <h4 class="page-title">Articles</h4> </div>
                         <ol class="breadcrumb">
                             <li>Dashboard</li>
-                            <li class="active">Download</li>
+                            <li>Lainnya</li>
+                            <li class="active">Articles</li>
                         </ol>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addModal"><span class="fa fa-plus fa-fw"></span>Tambah Files</button>
-                            <hr>
                             <div class="table-responsive">
-                                <table id="example23" class="display nowrap" cellspacing="0" width="100%">
+                                <table id="example23" class="display wrap" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>File</th>
-                                            <th>Tanggal</th>
-                                            <th>Oleh</th>
-                                            <th>Download</th>
+                                            <th>Nama Penulis</th>
+                                            <th>Judul Artikel</th>
+                                            <th>Dibuat Pada</th>
+                                            <th>Status Publish</th>
                                             <th style="text-align:right;">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                      <?php
-                            					$no=0;
-                              					foreach ($data->result_array() as $i) :
-                              					   $no++;
-                                           $id=$i['file_id'];
-                                           $judul=$i['file_judul'];
-                                           $deskripsi=$i['file_deskripsi'];
-                                           $oleh=$i['file_oleh'];
-                                           $tanggal=$i['tanggal'];
-                                           $download=$i['file_download'];
-                                           $file=$i['file_data'];
-                                      ?>
+                                      <?php foreach ($data->result() as $row) : ?>
                                         <tr>
-                                          <td><?php echo $no;?></td>
-                                          <td><a href="<?php echo base_url().'admin/files/download/'.$id;?>"><?php echo $judul;?></a></td>
-                                          <td><?php echo $tanggal;?></td>
-                                          <td><?php echo $oleh;?></td>
-                                          <td><?php echo $download;?></td>
+                                          <td><?php echo $row->nama_lengkap;?></td>
+                                          <td><?php echo $row->artikel_judul;?></td>
+                                          <td><?php echo date("d M Y H:i", strtotime($row->artikel_tanggal));?></td>
+                                            <?php if($row->publish_status=='0'):?>
+                                                <td>Belum Di Publish</td> 
+                                            <?php else:?>
+                                                <td>Sudah di Publish</td>
+                                            <?php endif;?>
                                           <td style="text-align:right;">
-                                                <a class="btn btn-success btn-circle" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>"><span class="fa fa-pencil"></span></a>
-                                                <a class="btn btn-danger btn-circle" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
+                                            <?php if($row->publish_status=='0'):?>
+                                            <a class="btn btn-success btn-circle" href="<?php echo site_url('admin/insight/lihat/'.$row->artikel_id);?>" title="View"><span class="ti ti-search"></span></a>
+                                            <a class="btn btn-primary btn-circle" href="<?php echo site_url('admin/insight/publish/'.$row->artikel_id);?>" title="Publish"><span class="fa fa-send"></span></a>
+                                            
+                                            <?php else:?>
+                                              <a class="btn btn-success btn-circle" href="<?php echo site_url('admin/insight/lihat/'.$row->artikel_id);?>" title="View"><span class="ti ti-search"></span></a>
+                                              <a class="btn btn-danger btn-circle" href="<?php echo site_url('admin/insight/unpublish/'.$row->artikel_id);?>" title="Unpublish"><span class="fa fa-times"></span></a>
+                                            <?php endif;?>
                                           </td>
                                         </tr>
                                       <?php endforeach;?>
@@ -163,147 +159,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!--modal Tambah user -->
-                <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                              <h4 class="modal-title" id="myModalLabel">Add File</h4>
-                          </div>
-                          <form class="form-horizontal" action="<?php echo base_url().'admin/files/simpan_file'?>" method="post" enctype="multipart/form-data">
-                          <div class="modal-body">
-
-                                  <div class="form-group">
-                                      <label for="inputUserName" class="col-sm-4 control-label">Judul</label>
-                                      <div class="col-sm-7">
-                                        <input type="text" name="xjudul" class="form-control" id="inputUserName" placeholder="Judul" required>
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="inputUserName" class="col-sm-4 control-label">Deskripsi</label>
-                                      <div class="col-sm-7">
-                                        <textarea class="form-control" rows="3" name="xdeskripsi" placeholder="Deskripsi ..." required></textarea>
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="inputUserName" class="col-sm-4 control-label">Oleh</label>
-                                      <div class="col-sm-7">
-                                        <input type="text" name="xoleh" class="form-control" id="inputUserName" placeholder="Oleh" required>
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="inputUserName" class="col-sm-4 control-label">File</label>
-                                      <div class="col-sm-7">
-                                        <input type="file" name="filefoto" required>
-                                        NB: file harus bertype pdf|doc|docx|ppt|pptx|zip. ukuran maksimal 2,7 MB.
-                                      </div>
-                                  </div>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary btn-flat" id="simpan">Simpan</button>
-                                </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                  <?php foreach ($data->result_array() as $i) :
-                      $id=$i['file_id'];
-                      $judul=$i['file_judul'];
-                      $deskripsi=$i['file_deskripsi'];
-                      $oleh=$i['file_oleh'];
-                      $tanggal=$i['tanggal'];
-                      $download=$i['file_download'];
-                      $file=$i['file_data'];
-                  ?>
-
-                  <div class="modal fade" id="ModalEdit<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                                  <h4 class="modal-title" id="myModalLabel">Edit File</h4>
-                              </div>
-                              <form class="form-horizontal" action="<?php echo base_url().'admin/files/update_file'?>" method="post" enctype="multipart/form-data">
-                              <div class="modal-body">
-
-                                       <div class="form-group">
-                                          <label for="inputUserName" class="col-sm-4 control-label">Judul</label>
-                                          <div class="col-sm-7">
-                                            <input type="hidden" name="kode" value="<?php echo $id;?>">
-                                            <input type="hidden" name="file" value="<?php echo $file;?>">
-                                            <input type="text" name="xjudul" class="form-control" value="<?php echo $judul;?>" id="inputUserName" placeholder="Judul" required>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="inputUserName" class="col-sm-4 control-label">Deskripsi</label>
-                                          <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" name="xdeskripsi" placeholder="Deskripsi ..." required><?php echo $deskripsi;?></textarea>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="inputUserName" class="col-sm-4 control-label">Oleh</label>
-                                          <div class="col-sm-7">
-                                            <input type="text" name="xoleh" class="form-control" value="<?php echo $oleh;?>" id="inputUserName" placeholder="Oleh" required>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="inputUserName" class="col-sm-4 control-label">File</label>
-                                          <div class="col-sm-7">
-                                            <input type="file" name="filefoto">
-                                            NB: file harus bertype pdf|doc|docx|ppt|pptx|zip. ukuran maksimal 2,7 MB.
-                                          </div>
-                                      </div>
-
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
-                                  <button type="submit" class="btn btn-primary btn-flat" id="simpan">Update</button>
-                              </div>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-              	<?php endforeach;?>
-
-                <?php foreach ($data->result_array() as $i) :
-                    $id=$i['file_id'];
-                    $judul=$i['file_judul'];
-                    $deskripsi=$i['file_deskripsi'];
-                    $oleh=$i['file_oleh'];
-                    $tanggal=$i['tanggal'];
-                    $download=$i['file_download'];
-                    $file=$i['file_data'];
-                ?>
-	<!--Modal Hapus Pengguna-->
-                <div class="modal fade" id="ModalHapus<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                                <h4 class="modal-title" id="myModalLabel">Hapus File</h4>
-                            </div>
-                            <form class="form-horizontal" action="<?php echo base_url().'admin/files/hapus_file'?>" method="post" enctype="multipart/form-data">
-                            <div class="modal-body">
-        							             <input type="hidden" name="kode" value="<?php echo $id;?>"/>
-                                   <input type="hidden" name="file" value="<?php echo $file;?>">
-                                    <p>Apakah Anda yakin mau menghapus file <b><?php echo $judul;?></b> ?</p>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary btn-flat" id="simpan">Hapus</button>
-                            </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-        	<?php endforeach;?>
-
+            </div>
             </div>
             <!-- /.container-fluid -->
             <footer class="footer text-center"> 2017 &copy; Ample Admin brought to you by themedesigner.in </footer>
@@ -317,6 +173,7 @@
     <script src="<?php echo base_url()?>materialize/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Menu Plugin JavaScript -->
     <script src="<?php echo base_url()?>plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="<?php echo base_url()?>plugins/bower_components/sweetalert/sweetalert.min.js"></script>
     <!--slimscroll JavaScript -->
     <script src="<?php echo base_url()?>materialize/js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
@@ -324,7 +181,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo base_url()?>materialize/js/custom.min.js"></script>
     <script src="<?php echo base_url()?>plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url()?>plugins/bower_components/sweetalert/sweetalert.min.js"></script>
     <!-- start - This is for export functionality only -->
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
@@ -382,21 +238,22 @@
         ]
         });
     </script>
+
     <?php if($this->session->flashdata('msg')=='error'):?>
         <script type="text/javascript">
                 swal("Whoops!","Something Wrong please try again","error")
         </script>
-    <?php elseif($this->session->flashdata('msg')=='success'):?>
+    <?php elseif($this->session->flashdata('msg')=='success-unpublish'):?>
         <script type="text/javascript">
-                swal("Hooray!!","Files successful added","success")
+                swal("Horray!!","This Article Successfully Unpublish","success")
         </script>
-    <?php elseif($this->session->flashdata('msg')=='info'):?>
+    <?php elseif($this->session->flashdata('msg')=='success-publish'):?>
         <script type="text/javascript">
-                swal("Hooray!!","Files successful updated","info")
+                swal("Horray!!","This Article Successfully Published","success")
         </script>
-    <?php elseif($this->session->flashdata('msg')=='success-hapus'):?>
+    <?php elseif($this->session->flashdata('msg')=='success1'):?>
         <script type="text/javascript">
-                swal("Hooray!!","Files successful deleted","success")
+                swal("Horray!!","Your Comment Successfully Replied","success")
         </script>
       <?php else:?>
       <?php endif;?>

@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>template/favicon.ico">
-    <title>Dashboard - Admin Bosowa Bina Insani Bogor</title>
+    <title>Dashboard - Admin Bosowa Al-Azhar Cilegon</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url()?>materialize/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -194,7 +194,7 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="white-box">
-                        <h3 class="box-title">Statistik Pengunjung Bulan Ini (<?php date_default_timezone_set('Asia/Jakarta'); echo date('F');?>)</h3>
+                        <h3 class="box-title">Statistik Pengunjung Bulan Ini (<?php date_default_timezone_set("Asia/Makassar"); echo date('F'); ?>)</h3>
                         <canvas id="canvas" width="600" height="280"></canvas>
                     </div>
                   </div>
@@ -205,7 +205,7 @@
                                 <table class="table">
                                     <tbody>
                                       <?php
-                                          $query=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_views DESC");
+                                          $query=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_views DESC LIMIT 5");
                                           foreach ($query->result_array() as $i) :
                                               $tulisan_id=$i['tulisan_id'];
                                               $tulisan_judul=$i['tulisan_judul'];
@@ -299,20 +299,6 @@
             responsive: true
         });
 
-        </script>
-        
-        <script type="text/javascript">
-          $("#alerttopright").fadeToggle(350);
-          $("#alerttopleft").fadeToggle(350);
-          $(".myadmin-alert .closed").click(function (event) {
-              $(this).parents(".myadmin-alert").fadeToggle(350);
-              return false;
-          });
-          /* Click to close */
-          $(".myadmin-alert-click").click(function (event) {
-              $(this).fadeToggle(350);
-              return false;
-          });
         </script>
 </body>
 

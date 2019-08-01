@@ -1,6 +1,11 @@
+<?php
+    $query=$this->db->query("SELECT * FROM tbl_inbox WHERE inbox_status='1'");
+    $query2=$this->db->query("SELECT * FROM tbl_komentar WHERE komentar_status='0'");
+    $jum_comment=$query2->num_rows();
+    $jum_pesan=$query->num_rows();
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +13,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>template/favicon.ico">
-    <title>Slider Preview - Admin Bosowa Al-Azhar Cilegon</title>
+    <title>Edit News - Admin Bosowa Al-Azhar Cilegon</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url()?>materialize/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- animation CSS -->
-    <link href="<?php echo base_url()?>materialize/css/animate.css" rel="stylesheet">
     <!-- Menu CSS -->
     <link href="<?php echo base_url()?>plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
-    <!--My admin Custom CSS -->
-    <link href="<?php echo base_url()?>plugins/bower_components/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url()?>plugins/bower_components/owl.carousel/owl.theme.default.css" rel="stylesheet" type="text/css" />
     <!-- animation CSS -->
     <link href="<?php echo base_url()?>materialize/css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -42,7 +41,7 @@
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
         </svg>
     </div>
-    <!-- ============================================================== --> -->
+    <!-- ============================================================== -->
     <!-- Wrapper -->
     <!-- ============================================================== -->
     <div id="wrapper">
@@ -53,7 +52,7 @@
                   <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu">Navigation</span></h3> </div>
                   <ul class="nav" id="side-menu">
                   <li> <a href="<?php echo base_url('admin/dashboard')?>" class="waves-effect"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard</span></a></li>
-                  <li> <a href="#" class="waves-effect"><i class="mdi mdi-content-copy fa-fw"></i> <span class="hide-menu">News<span class="fa arrow"></span></span></a>
+                  <li> <a href="#" class="waves-effect active"><i class="mdi mdi-content-copy fa-fw"></i> <span class="hide-menu">News<span class="fa arrow"></span></span></a>
                       <ul class="nav nav-second-level two-li">
                           <li><a href="<?php echo base_url('admin/tulisan')?>"><i class="ti-layout-width-default fa-fw"></i> <span class="hide-menu">News List</span></a></li>
                           <li><a href="<?php echo base_url('admin/tulisan/add_tulisan')?>" class="waves-effect"><i class="ti-email fa-fw"></i> <span class="hide-menu">Post News</span></a></li>
@@ -70,7 +69,7 @@
                           <li><a href="<?php echo base_url('admin/galeri')?>" class="waves-effect"><i class="fa fa-file-image-o fa-fw"></i><span class="hide-menu">Photos</span></a></li>
                       </ul>
                   </li>
-                  <li> <a href="#" class="waves-effect active"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Lainnya</span></a>
+                  <li> <a href="#" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Lainnya</span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="<?php echo base_url('admin/guru')?>"><i class="ti-comments-smiley fa-fw"></i><span class="hide-menu">Data Guru</span></a></li>
                         <li><a href="#" class="waves-effect"><i class="ti-desktop fa-fw"></i><span class="hide-menu">Kesiswaan<span class="fa arrow"></span></a>
@@ -82,10 +81,10 @@
                             <li><a href="<?php echo base_url('admin/kelas')?>" class="waves-effect"><i class="ti-desktop fa-fw"></i><span class="hide-menu">Kelas</span></a></li>
                             <li><a href="<?php echo base_url('admin/kat_prestasi')?>" class="waves-effect"><i class="ti-layout-sidebar-left fa-fw"></i><span class="hide-menu">Kategori</span></a></li>
                           </ul>
-                          <li><a href="#" class="waves-effect active"><i class="fa fa-wrench fa-fw"></i><span class="hide-menu">Web Administration<span class="fa arrow"></span></span></a>
+                          <li><a href="#" class="waves-effect"><i class="fa fa-wrench fa-fw"></i><span class="hide-menu">Web Administration<span class="fa arrow"></span></span></a>
                             <ul class="nav nav-third-level">
                               <li><a href="<?php echo base_url('admin/web_admin')?>" class="waves-effect"><i class="fa fa-globe fa-fw"></i><span class="hide-menu">Umum</span></a></li>
-                              <li><a href="<?php echo base_url('admin/slider')?>" class="waves-effect active"><i class="ti-layout-slider fa-fw"></i><span class="hide-menu">Slider</span></a></li>
+                              <li><a href="<?php echo base_url('admin/slider')?>" class="waves-effect"><i class="ti-layout-slider fa-fw"></i><span class="hide-menu">Slider</span></a></li>
                               <li><a href="<?php echo base_url('admin/slider_unit_pendidikan')?>" class="waves-effect"><i class="mdi mdi-view-carousel fa-fw"></i><span class="hide-menu">Slider Unit Pendidikan</span></a></li>
                             </ul>
                           </li>
@@ -106,79 +105,71 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Slider Preview</h4> </div>
+                        <h4 class="page-title">Edit News</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
-                            <li><a href="javascript:void(0)">Dashboard</a></li>
-                            <li><a href="javascript:void(0)">Lainnya</a></li>
-                            <li class="active">Preview</li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">News</a></li>
+                            <li class="active">Edit News</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-
-                <!-- .row -->
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Slide show (Saat ini)
-                              <?php
-                                $limit = $slider->num_rows();
-                              ?>
-                            <?php if($limit<10):?>
-                              <a href="<?php echo base_url('admin/slider/tambah_slider')?>" class="btn btn-info pull-right">Tambah Slider</a>
-                            <?php else:?>
-                              <a href="#" class="btn btn-info pull-right" alt="alert" id="sa-warning">Tambah Slider</a>
-                            <?php endif;?>
-                            </div>
-                            <div class="panel-wrapper p-b-10 collapse in">
-                                <div id="owl-demo" class="owl-carousel owl-theme">
-                                  <?php foreach ($slider->result_array() as $slide) :
-                                    $id = $slide['id'];
-                                    $sld = $slide['nama'];
+                    <div class="col-md-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading"> News Details</div>
+                            <div class="panel-wrapper collapse in" aria-expanded="true">
+                                <div class="panel-body">
+                                  <?php
+                                      $b=$data->row_array();
                                   ?>
-                                    <div class="item"><img src="<?php echo base_url().'template/sliders/'.$sld;?>" height="600px" width="750px" alt="Slider Img"> <br>
-                                      <div class="col-sm-12">
-                                        <a class="btn btn-danger pull-right" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span> Hapus Slider</a>
-                                      </div>
-                                    </div>
+                                        <div class="form-body">
+                                          <?php echo form_open_multipart('admin/tulisan/update_tulisan');?>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Judul Berita / Artikel</label>
+                                                        <input type="hidden" name="kode" value="<?php echo $b['artikel_id'];?>">
+                                                        <input type="text" name="xjudul" class="form-control" value="<?php echo $b['artikel_judul'];?>" placeholder="Judul berita atau artikel" disabled/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/row-->
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                  <textarea id="editor1" class="form-control" name="xisi" style="height:260px" disabled><?php echo $b['artikel_isi'];?></textarea>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Category</label>
+                                                            <select class="form-control" name="xkategori" disabled>
+                                                            <?php $k=$kat->row_array();?>
+                                                                <option value="<?php echo $k['kategori_id'];?>"><?php echo $k['kategori_nama'];?></option>
+                                                            </select>
+                                                        </div>
 
-                                  <?php endforeach;?>
+                                                        <div class="form-group">
+                                                            <label class="control-label">Jenis Berita</label>
+                                                            <select class="form-control" name="xjenis" disabled>
+                                                            <?php $j=$ins->row_array();?>
+                                                                <option value="<?php echo $j['id'];?>"><?php echo $j['nama_jenis'];?></option>
+                                                            </select>
+                                                        </div>
+
+                                                    <div class="form-group">
+                                                        <a href="<?php echo base_url('admin/insight')?>" class="btn btn-default">Kembali</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <?php echo form_close();?>
+                                        </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <?php
-                  foreach($slider->result_array() as $si):
-                    $id_slider = $si['id'];
-                    $nama = $si['nama'];
-                ?>
-                <div id="ModalHapus<?php echo $id_slider;?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                  <h4 class="modal-title">Hapus Slider</h4> </div>
-                              <div class="modal-body">
-                               <form class="form-horizontal" action="<?php echo base_url().'admin/slider/hapus_slider'?>" method="post" enctype="multipart/form-data">
-                                          <input type="hidden" name="id" value="<?php echo $id_slider;?>"/>
-                                          <input type="hidden" name="gambar" value="<?php echo $nama;?>">
-                                      <p>Apakah Anda yakin mau menghapus Slider Ini ?</p>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
-                                  <button type="submit" class="btn btn-danger waves-effect waves-light">Delete</button>
-                              </div>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-                <?php endforeach;?>
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
             </div>
             <!-- /.container-fluid -->
             <footer class="footer text-center"> 2017 &copy; Ample Admin brought to you by themedesigner.in </footer>
@@ -196,20 +187,17 @@
     <script src="<?php echo base_url()?>materialize/js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
     <script src="<?php echo base_url()?>materialize/js/waves.js"></script>
-    <!-- jQuery for carousel -->
-    <script src="<?php echo base_url()?>plugins/bower_components/owl.carousel/owl.carousel.min.js"></script>
-    <script src="<?php echo base_url()?>plugins/bower_components/owl.carousel/owl.custom.js"></script>
-    <script src="<?php echo base_url()?>plugins/bower_components/sweetalert/sweetalert.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo base_url()?>materialize/js/custom.min.js"></script>
+    <script src="<?php echo base_url()?>materialize/js/jasny-bootstrap.js"></script>
     <!--Style Switcher -->
+    <script src="<?php echo base_url()?>plugins/ckeditor/ckeditor.js"></script>
     <script src="<?php echo base_url()?>plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
-    <script type="text/javascript">
-    $('#sa-warning').click(function(){
-        swal("Sorry!", "You can only add 10 Slider, delete slider if you want change the slider", "warning")
+    <script>
+    CKEDITOR.replace('editor1' ,{
+      filebrowserImageBrowseUrl : '<?php echo base_url('plugins/kcfinder'); ?>'
     });
-    </script>
-    <?php $this->load->view('admin/sweetalert')?>
+  </script>
 </body>
 
 </html>

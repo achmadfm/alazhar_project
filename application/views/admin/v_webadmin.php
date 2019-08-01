@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url()?>template/favicon.ico">
-    <title>Web Administration - Admin Bosowa Bina Insani Bogor</title>
+    <title>Web Administration - Admin Bosowa Al-Azhar Cilegon</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url()?>materialize/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -155,7 +155,7 @@
                         </div>
 
                         <div class="white-box">
-                            <h3 class="box-title m-b-0">School History of Bosowa Bina Insani Bogor</h3>
+                            <h3 class="box-title m-b-0">School History of Bosowa Al-Azhar Cilegon</h3>
                             <p class="text-muted m-b-30 font-13"> (Form ini untuk mengedit sejarah sekolah) </p>
                             <?php $sh = $sejarah->row_array();?>
                             <form class="form-horizontal">
@@ -183,7 +183,7 @@
 
                     <div class="col-sm-6">
                       <div class="white-box">
-                          <h3 class="box-title m-b-0">Bosowa Bina Insani Bogor Welcome Speech</h3>
+                          <h3 class="box-title m-b-0">Bosowa Al-Azhar Cilegon Welcome Speech</h3>
                           <p class="text-muted m-b-30 font-13"> (Form ini untuk mengedit kata sambutan kepala sekolah) </p>
                           <?php $s = $speech->row_array();?>
                             <div class="form-group">
@@ -193,7 +193,7 @@
                                     <div class="form-group">
                                       <input type="hidden" name="xkode" value="<?php echo $s['id_sambutan'];?>">
                                       <img height="370px" width="260px" src="<?php echo base_url().'template/speech/'.$s['foto_sambutan'];?>" class="img img-rounded" disabled>
-                                      <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal Bosowa Bina Insani Bogor</small></center>
+                                      <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal Bosowa Al-Azhar Cilegon</small></center>
                                       <br/>
                                     </div>
                                   </div>
