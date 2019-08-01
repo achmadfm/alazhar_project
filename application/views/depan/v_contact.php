@@ -165,7 +165,7 @@
 							<ul class="list list-icons list-icons-style-3 mt-xlg">
 								<li><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jalan Boulevard Blok B No.5, Sukmajaya, Kecamatan Jombang, Kedaleman, Kec. Cibeber, Kota Cilegon, Banten 42422</li>
 								<li><i class="fa fa-phone"></i> <strong>Telepon:</strong> (0254) 378474</li>
-								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="#">info.bosowaschoolmakassar@gmail.com</a></li>
+								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="#">bosowa.alazhar@gmail.com</a></li>
 							</ul>
 
 							<hr>
