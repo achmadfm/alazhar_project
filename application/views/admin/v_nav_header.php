@@ -13,7 +13,7 @@
         <div class="top-left-part">
             <!-- Logo -->
             <a class="logo" href="<?php echo base_url('admin/dashboard')?>">
-              <img src="<?php echo base_url()?>template/logo_school.png" width="200px" alt="home" class="light-logo" />
+              <img src="<?php echo base_url()?>template/logo.png" width="200px" alt="home" class="light-logo" />
             </a>
         </div>
         <!-- /Logo -->
