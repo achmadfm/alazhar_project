@@ -43,7 +43,7 @@
         Prestasi
       </a>
     </li>
-    <li class="dropdown <?php echo activate_menu('program');?>">
+    <li class="<?php echo activate_menu('program');?>">
       <a href="<?php echo base_url('program')?>">Keunggulan</a>
     </li>
     <li class="<?php echo activate_menu('kontak');?>">
