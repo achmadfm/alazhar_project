@@ -322,19 +322,19 @@
 						<div class="row counters">
 							<div class="col-sm-6 col-lg-3">
 								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="300">
-								<iframe width="854" height="480" src="https://www.youtube.com/embed/jx0HA0JJM1k" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe width="320" height="220" src="https://www.youtube.com/embed/jx0HA0JJM1k" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									<label><b>Bosowa Al-Azhar - Cilegon Banten</b></label>
 								</div>
 							</div>
 							<div class="col-sm-6 col-lg-3">
 								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="600">
-								<iframe width="854" height="480" src="https://www.youtube.com/embed/OGyYPiHzTzI" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe width="320" height="220" src="https://www.youtube.com/embed/OGyYPiHzTzI" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									<label><b>Profil Bosowa Al-Azhar Cilegon</b></label>
 								</div>
 							</div>
 							<div class="col-sm-6 col-lg-3">
 								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="900">
-								<iframe width="854" height="480" src="https://www.youtube.com/embed/5wwJlLdWAJ8" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe width="320" height="220" src="https://www.youtube.com/embed/5wwJlLdWAJ8" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									<label><b>Dokumentasi Pembukaan Festival Bosowa 2016</b></label>
 								</div>
 							</div>
