@@ -315,41 +315,66 @@
 					  </div>
 					</div>
 					</div>
+					
+					<hr class="tall">
+
+					<div class="container">
+						<div class="row counters">
+							<div class="col-sm-6 col-lg-3">
+								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="300">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/jx0HA0JJM1k" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<label><b>Bosowa Al-Azhar - Cilegon Banten</b></label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="600">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/OGyYPiHzTzI" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<label><b>Profil Bosowa Al-Azhar Cilegon</b></label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="900">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/5wwJlLdWAJ8" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<label><b>Dokumentasi Pembukaan Festival Bosowa 2016</b></label>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<hr class="tall">
 
 					<div class="container">
 						<div class="row counters">
-								<div class="col-sm-6 col-lg-3">
-									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="300">
-										<i style="color:#0088cc;" class="fa fa-user-o"></i>
-										<strong style="color:#0088cc;" data-to="<?php echo $visitoronline;?>">0</strong>
-										<label>Pengunjung Online Saat ini</label>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-3">
-									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="600">
-										<i style="color:#0088cc;" class="fa fa-users"></i>
-										<strong style="color:#0088cc;" data-to="<?php echo $pengunjung?>">0</strong>
-										<label>Pengunjung Hari ini</label>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-3">
-									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="900">
-										<i style="color:#0088cc;" class="fa fa-exchange"></i>
-										<strong style="color:#0088cc;" data-to="<?php echo $hits['total'];?>">0</strong>
-										<label>Hits hari ini</label>
+							<div class="col-sm-6 col-lg-3">
+								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="300">
+									<i style="color:#0088cc;" class="fa fa-user-o"></i>
+									<strong style="color:#0088cc;" data-to="<?php echo $visitoronline;?>">0</strong>
+									<label>Pengunjung Online Saat ini</label>
 								</div>
 							</div>
-								<div class="col-sm-6 col-lg-3">
-									<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="1200">
-										<i style="color:#0088cc;" class="fa fa-line-chart"></i>
-										<strong style="color:#0088cc;" data-to="<?php echo $lastyear['visitor_last_year'];?>">0</strong>
-										<label>Pengunjung Tahun Terakhir</label>
+							<div class="col-sm-6 col-lg-3">
+								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="600">
+									<i style="color:#0088cc;" class="fa fa-users"></i>
+									<strong style="color:#0088cc;" data-to="<?php echo $pengunjung?>">0</strong>
+									<label>Pengunjung Hari ini</label>
 								</div>
 							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="900">
+									<i style="color:#0088cc;" class="fa fa-exchange"></i>
+									<strong style="color:#0088cc;" data-to="<?php echo $hits['total'];?>">0</strong>
+									<label>Hits hari ini</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="counter counter-warning appear-animation" data-appear-animation="bounceIn" data-appear-animation-delay="1200">
+									<i style="color:#0088cc;" class="fa fa-line-chart"></i>
+									<strong style="color:#0088cc;" data-to="<?php echo $lastyear['visitor_last_year'];?>">0</strong>
+									<label>Pengunjung Tahun Terakhir</label>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
 
 			<?php $this->load->view('depan/v_footer')?>
 		</div>
