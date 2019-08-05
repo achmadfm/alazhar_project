@@ -20,7 +20,7 @@
 				<span class="phone">(0254) 378474</span>
 				<!-- <span class="phone">08514196761 (Ms. Alia)</span> -->
 				<ul class="list list-icons list-icons-sm">
-					<li><i class="fa fa-envelope"></i> <a href="#">yayasanbosowabinainsani@gmail.com</a></li>
+					<li><i class="fa fa-envelope"></i> <a href="#">bosowa.alazhar@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-2">
