@@ -16,7 +16,7 @@
 			    
 			</div>
 			<div class="col-lg-4">
-				<h5 class="mb-2">Call Us</h5>
+				<h5 class="mb-2">Marketing Contact</h5>
 				<span class="phone">Ibu Ade</span>
 				<!-- <span class="phone">08514196761 (Ms. Alia)</span> -->
 				<p class="mb-0"> +6281382390193 <br> +6281906400993 </p>
