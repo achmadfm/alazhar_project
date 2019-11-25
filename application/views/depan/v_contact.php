@@ -164,8 +164,8 @@
 								<a class="mt-1 mb-1 popup-gmaps btn btn-primary" href="https://www.google.com/maps?safe=strict&q=bosowa+al+azhar+cilegon&biw=1366&bih=615&dpr=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjWtsrDytLjAhUXfysKHc3TDXEQ_AUIEigC" target="_blank">Open Google Map</a>
 							<ul class="list list-icons list-icons-style-3 mt-xlg">
 								<li><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jalan Boulevard Blok B No.5, Sukmajaya, Kecamatan Jombang, Kedaleman, Kec. Cibeber, Kota Cilegon, Banten 42422</li>
-								<li><i class="fa fa-phone"></i> <strong>Contact Person 1 :</strong> +6281382390193 (Marketing)</li>
-								<li><i class="fa fa-phone"></i> <strong>Contact Person 2 :</strong> +6281906400993 (Ms. Ade)</li>
+								<li><i class="fa fa-phone"></i> <strong>Contact Person 1 :</strong> 081382390193 (Marketing)</li>
+								<li><i class="fa fa-phone"></i> <strong>Contact Person 2 :</strong> 081906400993 (Ms. Ade)</li>
 								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="#">bosowa.alazhar@gmail.com</a></li>
 							</ul>
 

@@ -17,8 +17,8 @@
 			</div>
 			<div class="col-lg-4">
 				<h5 class="mb-2">Contact Person</h5>
-				<span class="phone">+6281382390193 (Marketing)</span>
-				<span class="phone">+6281906400993 (Ms. Ade)</span>
+				<span class="phone">081382390193 (Marketing)</span>
+				<span class="phone">081906400993 (Ms. Ade)</span>
 				<ul class="list list-icons list-icons-sm">
 					<li><i class="fa fa-envelope"></i> <a href="#">bosowa.alazhar@gmail.com</a></li>
 				</ul>
