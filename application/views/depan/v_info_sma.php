@@ -230,22 +230,16 @@
 								</div>
 							</div>
 							<div class="col-lg-4">
-									<h4 class="font-weight-bold text-color-dark" align="center">Gallery</h4>
-									<div class="owl-carousel owl-theme" data-plugin-options="{'items': 1, 'autoplay': true, 'loop': true, 'margin': 10, 'animateOut': 'fadeOut'}">
-										<?php
-											foreach($home->result_array() as $galeri):
-												$foto = $galeri['galeri_gambar'];
-										?>
-										<div>
-											<?php if(empty($foto)):?>
-											<img alt="" class="img-responsive" width="10px" height="10px" src="<?php echo base_url()?>template/img/projects/project-1.jpg">
-										<?php else: ?>
-											<img alt="" class="img-responsive" width="10px" height="10px" src="<?php echo base_url().'template/galeri/'.$foto;?>">
-										<?php endif;?>
-										</div>
-									<?php endforeach;?>
+								<div class="featured-box featured-box-primary">
+									<div class="box-content">
+										<h4 class="text-uppercase">Galeri Instagram Bosowa Al-Azhar</h4>
+										<ul class="thumbnail-gallery" data-plugin-lightbox data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}}" id="instafeed">
+											
+										</ul>
+										<center><a class="btn btn-primary" href="https://www.instagram.com/bosowaalazhar/" target="_blank">Click Here for More Photos</a></center>
 									</div>
 								</div>
+							</div>
 
 							</div>
 				</div>
@@ -310,7 +304,7 @@
 										   II : Februari 2019 - April 2019<br>
 										  III : Mei 2019 - Juni 2019
 										</p>
-										<a href="http://bit.ly/Register_BSM" target="_blank" class="btn btn-md btn-info">Daftar? Klik disini!</a>
+										<a href="http://bit.ly/Register_Alazhar" target="_blank" class="btn btn-md btn-info">Daftar? Klik disini!</a>
 									</div>
 								</div>
 							</div>

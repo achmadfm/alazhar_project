@@ -207,7 +207,7 @@
 										   II : Februari 2019 - April 2019<br>
 										  III : Mei 2019 - Juni 2019
 										</p>
-										 <a href="http://bit.ly/Register_BSM" target="_blank" class="btn btn-md btn-info">Daftar? Klik disini!</a>
+										 <a href="http://bit.ly/Register_Alazhar" target="_blank" class="btn btn-md btn-info">Daftar? Klik disini!</a>
 									</div>
 								</div>
 							</div>
