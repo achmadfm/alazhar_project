@@ -173,12 +173,6 @@
 
 				<hr class="tall">
 
-				<div class="center">
-					<img src="<?php echo base_url()?>template/keunggulan_cilegon.jpg" width="1366px" alt="" />
-				</div>
-
-				<hr class="tall">
-
 				<div class="container">
                     <center>
                         <div class="featured-boxes featured-boxes-style-3">
@@ -195,6 +189,12 @@
 							<a class="btn btn-info btn-lg round" href="<?php echo base_url('Cilegon/info_smp')?>">Sekolah Menengah Pertama</a>
 							<a class="btn btn-primary btn-lg round" href="<?php echo base_url('Cilegon/info_sd')?>">Sekolah Dasar</a>
 					</center>	
+				</div>
+
+				<hr class="tall">
+
+				<div class="center">
+					<img src="<?php echo base_url()?>template/keunggulan_cilegon.jpg" width="1366px" alt="" />
 				</div>
 
                 <hr class="tall">
