@@ -14,11 +14,11 @@
     	 
     	<?php 
     	   
-    	if ($this->uri->segment(1)=='news'){ 
-    	    $rows = $this->m_tulisan->view_where('tbl_tulisan',array('tulisan_slug' => $this->uri->segment(2)))->row_array();
+    	if ($this->uri->segment(2)=='news'){ 
+    	    $rows = $this->m_tulisan->view_where('tbl_tulisan',array('tulisan_slug' => $this->uri->segment(3)))->row_array();
 	    echo '<meta property="og:title" content="'.$title.'" />
 			 <meta property="og:type" content="article" />
-			 <meta property="og:url" content="'.base_url().''.$this->uri->segment(2).'" />
+			 <meta property="og:url" content="'.base_url().''.$this->uri->segment(3).'" />
 			 <meta property="og:image" content="'.base_url().'template/cover/'.$rows['tulisan_gambar'].'" /> 
 			 <meta property="og:description" content="'.$deskripsi.'"/>';
 	    } ?>
@@ -71,6 +71,32 @@
 
 	</head>
 	<body class="loading-overlay-showing" data-loading-overlay>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="719796298157947"
+  theme_color="#67b868"
+  logged_in_greeting="Halo, Selamat Datang di Website Bosowa Al-Azhar, ada yang bisa kami bantu?"
+  logged_out_greeting="Halo, Selamat Datang di Website Bosowa Al-Azhar, ada yang bisa kami bantu?">
+      </div>
 		<div class="loading-overlay">
 			<div class="bounce-loader">
 				<div class="bounce1"></div>
