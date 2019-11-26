@@ -173,6 +173,12 @@
 
 				<hr class="tall">
 
+				<div class="center">
+					<img src="<?php echo base_url()?>template/keunggulan_cilegon.jpg" width="1366px" alt="" />
+				</div>
+
+				<hr class="tall">
+
 				<div class="container">
                     <center>
                         <div class="featured-boxes featured-boxes-style-3">
@@ -199,14 +205,8 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="call-to-action-content align-left pb-md mb-xl ml-none">
-										<h3 class="text-color-light mb-none">Pendaftaran Siswa Baru Tahun Ajaran 2019 - 2020 <strong>Telah DiBuka</strong></h3>
+									<h2 class="text-color-light mb-none">Pendaftaran Siswa Baru <br> Bosowa Al-Azhar Cilegon <br> <strong>Telah DiBuka</strong> </h2>
 										<br>
-										<p class="lead mb">
-										    <strong>Gelombang : </strong> <br>
-										    I : November 2018 - Januari 2019<br>
-										   II : Februari 2019 - April 2019<br>
-										  III : Mei 2019 - Juni 2019
-										</p>
 										 <a href="http://bit.ly/Register_Alazhar" target="_blank" class="btn btn-md btn-info">Daftar? Klik disini!</a>
 									</div>
 								</div>
