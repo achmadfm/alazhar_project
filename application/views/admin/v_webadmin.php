@@ -179,7 +179,7 @@
                             </form>
                         </div>
                     </div>
-                    <?php $this->load->view("admin/tab_sambutan");?>
+                    <?php $this->load->view('admin/sambutan');?>
                 </div>
             </div>
                 <!-- /.row -->
