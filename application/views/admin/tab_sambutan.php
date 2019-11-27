@@ -10,7 +10,7 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade active in" id="profile1">
-            <h3 class="box-title m-b-0">Bosowa Bina Insani Bogor SD Welcome Speech</h3>
+            <h3 class="box-title m-b-0">Bosowa Al-Azhar Cilegon SD Welcome Speech</h3>
                     <p class="text-muted m-b-30 font-13"> (Form ini untuk mengedit kata sambutan kepala sekolah) </p>
                     <?php $s = $speechsd->row_array();?>
                     <div class="form-group">
@@ -20,7 +20,7 @@
                                 <div class="form-group">
                                     <input type="hidden" name="xkode2" value="<?php echo $s['id_sambutan'];?>">
                                     <img height="370px" width="260px" src="<?php echo base_url().'template/speech/'.$s['foto_sambutan'];?>" class="img img-rounded" disabled>
-                                    <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal SD Bosowa Bina Insani Bogor</small></center>
+                                    <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal SD Bosowa Al-Azhar Cilegon</small></center>
                                     <br/>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                 <div class="clearfix"></div>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="messages1">
-            <h3 class="box-title m-b-0">Bosowa Bina Insani Bogor SMP Welcome Speech</h3>
+            <h3 class="box-title m-b-0">Bosowa Al-Azhar Cilegon SMP Welcome Speech</h3>
                     <p class="text-muted m-b-30 font-13"> (Form ini untuk mengedit kata sambutan kepala sekolah) </p>
                     <?php $s = $speechsmp->row_array();?>
                     <div class="form-group">
@@ -72,7 +72,7 @@
                                 <div class="form-group">
                                     <input type="hidden" name="xkode3" value="<?php echo $s['id_sambutan'];?>">
                                     <img height="370px" width="260px" src="<?php echo base_url().'template/speech/'.$s['foto_sambutan'];?>" class="img img-rounded" disabled>
-                                    <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal SMP Bosowa Bina Insani Bogor</small></center>
+                                    <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal SMP Bosowa Al-Azhar Cilegon</small></center>
                                     <br/>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
                 <div class="clearfix"></div>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="settings1">
-            <h3 class="box-title m-b-0">Bosowa Bina Insani Bogor SMA Welcome Speech</h3>
+            <h3 class="box-title m-b-0">Bosowa Al-Azhar Cilegon SMA Welcome Speech</h3>
                     <p class="text-muted m-b-30 font-13"> (Form ini untuk mengedit kata sambutan kepala sekolah) </p>
                     <?php $s = $speechsma->row_array();?>
                     <div class="form-group">
@@ -124,7 +124,7 @@
                                 <div class="form-group">
                                     <input type="hidden" name="xkode4" value="<?php echo $s['id_sambutan'];?>">
                                     <img height="370px" width="260px" src="<?php echo base_url().'template/speech/'.$s['foto_sambutan'];?>" class="img img-rounded" disabled>
-                                    <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal SMA Bosowa Bina Insani Bogor</small></center>
+                                    <center><h3 class="box-title"><?php echo $s['nama_kepsek']?></h3> <small>Principal SMA Bosowa Al-Azhar Cilegon</small></center>
                                     <br/>
                                 </div>
                             </div>
