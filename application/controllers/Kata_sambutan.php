@@ -15,5 +15,6 @@ class Kata_sambutan extends CI_Controller{
 		$x['speechsd'] = $this->M_web_admin->get_speech_by_id($id1);
 		$x['speechsmp'] = $this->M_web_admin->get_speech_by_id($id2);
 		$x['speechsma'] = $this->M_web_admin->get_speech_by_id($id3);
+		$this->load->view('depan/v_kata_sambutan',$x);
 	}
 }
