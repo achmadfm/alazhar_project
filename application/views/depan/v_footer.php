@@ -8,7 +8,7 @@
 				<div class="contact-details">
 				   
 					    <h4><strong>SD - SMP - SMA</strong></h4>
-						<a target="_blank" href="https://www.google.com/maps/place/Sekolah+Bosowa+Al+Azhar+Cilegon/@-6.0147342,106.0796344,18z/data=!4m8!1m2!2m1!1salamat+bosowa+al+azhar+cilegon!3m4!1s0x2e418de99451c465:0xa5eca33716c7a2d0!8m2!3d-6.0145197!4d106.0798951"><p><i class="fa fa-map-marker"></i> <strong></strong> Jalan Boulevard Blok B No.5, Sukmajaya, Kecamatan Jombang, Kedaleman, Kec. Cibeber, Kota Cilegon, Banten 42422</p></a>
+						<a target="_blank" href="https://www.google.co.id/maps/place/Sekolah+Bosowa+Al+Azhar+Cilegon/@-6.0145144,106.0777064,17z/data=!3m1!4b1!4m5!3m4!1s0x2e418de99451c465:0xa5eca33716c7a2d0!8m2!3d-6.0145197!4d106.0798951?hl=id"><p><i class="fa fa-map-marker"></i> <strong></strong> Jl. Boulevard Blok B No.5, Sukmajaya, Kecamatan Jombang, Kota Cilegon, Banten Kode Pos 42416</p></a>
 					    
 				</div>
 			</div>

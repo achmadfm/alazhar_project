@@ -187,9 +187,9 @@
 						<div class="col-md-6">
 
 							<h4 class="heading-primary"><strong>Kantor</strong></h4>
-								<a class="mt-1 mb-1 popup-gmaps btn btn-primary" href="https://www.google.com/maps?safe=strict&q=bosowa+al+azhar+cilegon&biw=1366&bih=615&dpr=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjWtsrDytLjAhUXfysKHc3TDXEQ_AUIEigC" target="_blank">Open Google Map</a>
+								<a class="mt-1 mb-1 popup-gmaps btn btn-primary" href="https://www.google.co.id/maps/place/Sekolah+Bosowa+Al+Azhar+Cilegon/@-6.0145144,106.0777064,17z/data=!3m1!4b1!4m5!3m4!1s0x2e418de99451c465:0xa5eca33716c7a2d0!8m2!3d-6.0145197!4d106.0798951?hl=id" target="_blank">Open Google Map</a>
 							<ul class="list list-icons list-icons-style-3 mt-xlg">
-								<li><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jalan Boulevard Blok B No.5, Sukmajaya, Kecamatan Jombang, Kedaleman, Kec. Cibeber, Kota Cilegon, Banten 42422</li>
+								<li><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> Jl. Boulevard Blok B No.5, Sukmajaya, Kecamatan Jombang, Kota Cilegon, Banten Kode Pos 42416</li>
 								<li><i class="fa fa-phone"></i> <strong>Contact Person 1 :</strong> 081382390193 (Marketing)</li>
 								<li><i class="fa fa-phone"></i> <strong>Contact Person 2 :</strong> 081906400993 (Ms. Ade)</li>
 								<li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="#">bosowa.alazhar@gmail.com</a></li>
