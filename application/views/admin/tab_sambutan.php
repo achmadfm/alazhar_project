@@ -9,7 +9,7 @@
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade" id="profile1">
+            <div role="tabpanel" class="tab-pane fade active in" id="profile1">
             <h3 class="box-title m-b-0">Bosowa Bina Insani Bogor SD Welcome Speech</h3>
                     <p class="text-muted m-b-30 font-13"> (Form ini untuk mengedit kata sambutan kepala sekolah) </p>
                     <?php $s = $speechsd->row_array();?>
