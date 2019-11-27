@@ -24,7 +24,6 @@
      $x['fasilitas'] = $this->M_web_admin->get_fasilitas();
      $x['program'] = $this->M_web_admin->get_program();
      $x['sejarah'] = $this->M_web_admin->get_sejarah();
-     $x['sejarahsab'] = $this->M_web_admin->get_sejarah_by_id($id);
      $x['testi'] = $this->M_web_admin->get_testimoni();
      $this->load->view('admin/v_webadmin',$x);
    }
