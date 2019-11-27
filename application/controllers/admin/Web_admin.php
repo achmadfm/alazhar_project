@@ -12,12 +12,15 @@
    }
 
    function index(){
-     $id = 2;
+     $id2 = 2;
+     $id3 = 3;
+     $id4 = 4;
      $x['unit'] = $this->M_web_admin->get_unit();
      $x['tentang'] = $this->M_web_admin->get_tentang();
      $x['status'] = $this->m_status->get_all_status();
-     $x['speech'] = $this->M_web_admin->get_speech();
-     $x['speechsab'] = $this->M_web_admin->get_speech_by_id($id);
+     $x['speechsd'] = $this->M_web_admin->get_speech_by_id($id2);
+     $x['speechsmp'] = $this->M_web_admin->get_speech_by_id($id3);
+     $x['speechsma'] = $this->M_web_admin->get_speech_by_id($id4);
      $x['fasilitas'] = $this->M_web_admin->get_fasilitas();
      $x['program'] = $this->M_web_admin->get_program();
      $x['sejarah'] = $this->M_web_admin->get_sejarah();
@@ -49,85 +52,134 @@
      redirect('admin/web_admin');
    }
 
-   function update_sambutan(){
-     $config['upload_path'] = './template/speech/'; //path folder
-     $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-     $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+   function update_sambutandua(){
+    $config['upload_path'] = './template/speech/'; //path folder
+    $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
+    $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
-     $this->upload->initialize($config);
-     if(!empty($_FILES['filefoto']['name'])) {
-       if($this->upload->do_upload('filefoto')) {
-         $gbr=$this->upload->data();
-         $config['image_library']='gd2';
-         $config['source_image']='./template/speech/'.$gbr['file_name'];
-         $config['create_thumb']=FALSE;
-         $config['maintain_ratio']=FALSE;
-         $config['quality']='100%';
-         $config['width']=260;
-         $config['height']=370;
-         $config['new_image']='./template/speech/'.$gbr['file_name'];
-         $this->load->library('image_lib',$config);
-         $this->image_lib->resize();
-         $foto=$gbr['file_name'];
-         $id_speech = $this->input->post('xkode');
-         $nama = $this->input->post('kepsek');
-         $isi = $this->input->post('sambutan');
-         $this->M_web_admin->up_sambutan($id_speech,$nama,$isi,$foto);
-         echo $this->session->set_flashdata('msg','info');
-         redirect('admin/web_admin');
-       }else{
-         echo $this->session->set_flashdata('msg','error');
-         redirect('admin/web_admin');
-       }
+    $this->upload->initialize($config);
+    if(!empty($_FILES['filefoto2']['name'])) {
+      if($this->upload->do_upload('filefoto2')) {
+        $gbr=$this->upload->data();
+        $config['image_library']='gd2';
+        $config['source_image']='./template/speech/'.$gbr['file_name'];
+        $config['create_thumb']=FALSE;
+        $config['maintain_ratio']=FALSE;
+        $config['quality']='100%';
+        $config['width']=260;
+        $config['height']=370;
+        $config['new_image']='./template/speech/'.$gbr['file_name'];
+        $this->load->library('image_lib',$config);
+        $this->image_lib->resize();
+        $foto=$gbr['file_name'];
+        $images=$this->input->post('gambar2');
+        $path='./template/speech/'.$images;
+        unlink($path);
+        $id_speech = $this->input->post('xkode2');
+        $nama = $this->input->post('kepsek2');
+        $isi = $this->input->post('sambutan2');
+        $this->M_web_admin->up_sambutan($id_speech,$nama,$isi,$foto);
+        echo $this->session->set_flashdata('msg','info');
+        redirect('admin/web_admin');
+      }else{
+        echo $this->session->set_flashdata('msg','error');
+        redirect('admin/web_admin');
+      }
+    }else{
+      $id_speech = $this->input->post('xkode2');
+      $nama = $this->input->post('kepsek2');
+      $isi = $this->input->post('sambutan2');
+      $this->M_web_admin->up_sambutan_no_gambar($id_speech,$nama,$isi);
+      echo $this->session->set_flashdata('msg','info2');
+      redirect('admin/web_admin');
+    }
+  }
+
+  function update_sambutantiga(){
+   $config['upload_path'] = './template/speech/'; //path folder
+   $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
+   $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+
+   $this->upload->initialize($config);
+   if(!empty($_FILES['filefoto3']['name'])) {
+     if($this->upload->do_upload('filefoto3')) {
+       $gbr=$this->upload->data();
+       $config['image_library']='gd2';
+       $config['source_image']='./template/speech/'.$gbr['file_name'];
+       $config['create_thumb']=FALSE;
+       $config['maintain_ratio']=FALSE;
+       $config['quality']='100%';
+       $config['width']=260;
+       $config['height']=370;
+       $config['new_image']='./template/speech/'.$gbr['file_name'];
+       $this->load->library('image_lib',$config);
+       $this->image_lib->resize();
+       $foto=$gbr['file_name'];
+       $images=$this->input->post('gambar3');
+       $path='./template/speech/'.$images;
+       unlink($path);
+       $id_speech = $this->input->post('xkode3');
+       $nama = $this->input->post('kepsek3');
+       $isi = $this->input->post('sambutan3');
+       $this->M_web_admin->up_sambutan($id_speech,$nama,$isi,$foto);
+       echo $this->session->set_flashdata('msg','info');
+       redirect('admin/web_admin');
      }else{
-       $id_speech = $this->input->post('xkode');
-       $nama = $this->input->post('kepsek');
-       $isi = $this->input->post('sambutan');
-       $this->M_web_admin->up_sambutan_no_gambar($id_speech,$nama,$isi);
-       echo $this->session->set_flashdata('msg','info2');
+       echo $this->session->set_flashdata('msg','error');
        redirect('admin/web_admin');
      }
+   }else{
+     $id_speech = $this->input->post('xkode3');
+     $nama = $this->input->post('kepsek3');
+     $isi = $this->input->post('sambutan3');
+     $this->M_web_admin->up_sambutan_no_gambar($id_speech,$nama,$isi);
+     echo $this->session->set_flashdata('msg','info2');
+     redirect('admin/web_admin');
    }
+ }
 
-   function update_sambutan_sab(){
-     $config['upload_path'] = './template/speech/'; //path folder
-     $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-     $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+ function update_sambutanempat(){
+   $config['upload_path'] = './template/speech/'; //path folder
+   $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
+   $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
-     $this->upload->initialize($config);
-     if(!empty($_FILES['filefoto']['name'])) {
-       if($this->upload->do_upload('filefoto')) {
-         $gbr=$this->upload->data();
-         $config['image_library']='gd2';
-         $config['source_image']='./template/speech/'.$gbr['file_name'];
-         $config['create_thumb']=FALSE;
-         $config['maintain_ratio']=FALSE;
-         $config['quality']='100%';
-         $config['width']=260;
-         $config['height']=370;
-         $config['new_image']='./template/speech/'.$gbr['file_name'];
-         $this->load->library('image_lib',$config);
-         $this->image_lib->resize();
-         $foto=$gbr['file_name'];
-         $id_speech = $this->input->post('xkode');
-         $nama = $this->input->post('kepsek');
-         $isi = $this->input->post('sambutan');
-         $this->M_web_admin->up_sambutan($id_speech,$nama,$isi,$foto);
-         echo $this->session->set_flashdata('msg','info');
-         redirect('admin/web_admin');
-       }else{
-         echo $this->session->set_flashdata('msg','error');
-         redirect('admin/web_admin');
-       }
+   $this->upload->initialize($config);
+   if(!empty($_FILES['filefoto4']['name'])) {
+     if($this->upload->do_upload('filefoto4')) {
+       $gbr=$this->upload->data();
+       $config['image_library']='gd2';
+       $config['source_image']='./template/speech/'.$gbr['file_name'];
+       $config['create_thumb']=FALSE;
+       $config['maintain_ratio']=FALSE;
+       $config['quality']='100%';
+       $config['width']=260;
+       $config['height']=370;
+       $config['new_image']='./template/speech/'.$gbr['file_name'];
+       $this->load->library('image_lib',$config);
+       $this->image_lib->resize();
+       $foto=$gbr['file_name'];
+       $images=$this->input->post('gambar4');
+       $path='./template/speech/'.$images;
+       unlink($path);
+       $id_speech = $this->input->post('xkode4');
+       $nama = $this->input->post('kepsek4');
+       $isi = $this->input->post('sambutan4');
+       $this->M_web_admin->up_sambutan($id_speech,$nama,$isi,$foto);
+       echo $this->session->set_flashdata('msg','info');
+       redirect('admin/web_admin');
      }else{
-       $id_speech = $this->input->post('xkode');
-       $nama = $this->input->post('kepsek');
-       $isi = $this->input->post('sambutan');
-       $this->M_web_admin->up_sambutan_no_gambar($id_speech,$nama,$isi);
-       echo $this->session->set_flashdata('msg','info2');
+       echo $this->session->set_flashdata('msg','error');
        redirect('admin/web_admin');
      }
+   }else{
+     $id_speech = $this->input->post('xkode4');
+     $nama = $this->input->post('kepsek4');
+     $isi = $this->input->post('sambutan4');
+     $this->M_web_admin->up_sambutan_no_gambar($id_speech,$nama,$isi);
+     echo $this->session->set_flashdata('msg','info2');
+     redirect('admin/web_admin');
    }
+ }
 
    function simpan_fasilitas(){
      $config['upload_path'] = './template/fasilitas/'; //path folder
