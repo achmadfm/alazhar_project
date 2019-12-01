@@ -418,5 +418,6 @@
 		<script src="<?php echo base_url()?>template/js/views/view.home.js"></script>
 
 		<script src="<?php echo base_url()?>template/js/theme.init.js"></script>
+		<script src="<?php echo base_url()?>template/js/instagram/custom.js"></script>
 	</body>
 </html>
