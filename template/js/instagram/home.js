@@ -2,8 +2,8 @@ $(document).ready(function() {
     
     var feed = new Instafeed({
 		get: 'user',
-		userId: '4229764297',
-		accessToken: '4229764297.9b35ef5.48036f186ec249d3ae095440878959a9',
+		userId: '8154458926',
+		accessToken: '8154458926.1677ed0.eeb4005b29ac44c1bf00c9c66afef69b',
         target: 'instafeedhome',
         limit: 9,
         sortBy: 'most-recent',

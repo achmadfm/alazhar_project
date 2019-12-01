@@ -320,7 +320,7 @@
 								<div class="box-content">
 									<h4 class="text-uppercase">Galeri Instagram</h4>
 									<ul class="thumbnail-gallery">
-										<div id="instafeed">
+										<div id="instafeedhome">
 										</div>
 									</ul>
 								</div>
