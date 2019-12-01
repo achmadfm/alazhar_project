@@ -205,5 +205,7 @@
 
 		<!-- Examples -->
 		<script src="<?php echo base_url()?>template/js/examples/examples.gallery.js"></script>
+		<script src="<?php echo base_url()?>template/js/instagram/instafeed.min.js"></script>
+		<script src="<?php echo base_url()?>template/js/instagram/custom.js"></script>
 	</body>
 </html>
