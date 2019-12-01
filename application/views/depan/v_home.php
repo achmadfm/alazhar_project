@@ -419,6 +419,6 @@
 
 		<script src="<?php echo base_url()?>template/js/theme.init.js"></script>
 		<script src="<?php echo base_url()?>template/js/instagram/instafeed.min.js"></script>
-		<script src="<?php echo base_url()?>template/js/instagram/custom.js"></script>
+		<script src="<?php echo base_url()?>template/js/instagram/home.js"></script>
 	</body>
 </html>
